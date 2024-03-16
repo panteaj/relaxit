@@ -6,7 +6,7 @@ import { FaHome } from "react-icons/fa";
 export default function todo() {
   const router = useRouter();
   const handleClick1 = () => {
-    router.back();
+    router.push("/");
   };
   const handleClick2 = () => {
     router.push("/todo/todolist");

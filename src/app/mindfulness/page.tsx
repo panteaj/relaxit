@@ -3,13 +3,16 @@
 import { useRouter } from "next/navigation";
 import { FaHome } from "react-icons/fa";
 
-export default function Mindfulness() {
+export default function StressCoper() {
   const router = useRouter();
   const handleClick1 = () => {
-    router.back();
+    router.push("/");
   };
   const handleClick2 = () => {
     router.push("/breathe");
+  };
+  const handleClickBack = () => {
+    router.back();
   };
 
   return (
@@ -73,6 +76,22 @@ export default function Mindfulness() {
           <span onClick={handleClick2} style={{ transition: "0.3s" }}>
             Next{" "}
           </span>
+        </button>
+      </div>
+      <div style={{ position: "fixed", bottom: "20px", left: "20px" }}>
+        <button
+          onClick={handleClickBack}
+          style={{
+            backgroundColor: "#548E87",
+            color: "#FFFFFF",
+            padding: "10px 20px",
+            border: "none",
+            borderRadius: "5px",
+            fontSize: "16px",
+            cursor: "pointer",
+          }}
+        >
+          Back
         </button>
       </div>
     </main>

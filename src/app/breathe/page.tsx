@@ -16,7 +16,9 @@ export default function breathe() {
   const handleClick2 = () => {
     router.push("/gratitude");
   };
-
+  const handleClickBack = () => {
+    router.back();
+  };
   const handleStartClick = () => {
     setIsAnimating(true);
   };
@@ -169,6 +171,22 @@ export default function breathe() {
           <span onClick={handleClick2} style={{ transition: "0.3s" }}>
             Next{" "}
           </span>
+        </button>
+      </div>
+      <div style={{ position: "fixed", bottom: "20px", left: "20px" }}>
+        <button
+          onClick={handleClickBack}
+          style={{
+            backgroundColor: "#548E87",
+            color: "#FFFFFF",
+            padding: "10px 20px",
+            border: "none",
+            borderRadius: "5px",
+            fontSize: "16px",
+            cursor: "pointer",
+          }}
+        >
+          Back
         </button>
       </div>
     </main>
