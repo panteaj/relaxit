@@ -9,7 +9,7 @@ export default function StressCoper() {
     router.push("/");
   };
   const handleClick2 = () => {
-    router.push("/mindfulness/visualization");
+    router.push("/mindfulness/eating");
   };
   const handleClickBack = () => {
     router.back();
@@ -72,10 +72,11 @@ export default function StressCoper() {
         </div>
       </nav>
       <div style={{ marginTop: "80px", textAlign: "center", flexGrow: "1" }}>
-        <h1 style={{ color: "#000000", fontSize: "40px" }}>Mindfulness</h1>
+        <h1 style={{ color: "#000000", fontSize: "40px" }}>Listening</h1>
         <p>
-          Be aware of the 5 senses! Follow this mindfulness journey and become
-          one with what you sense around you!
+          Listen to the sound that is playing in the backgorund. Use your 5
+          senses to imagine what is happening at your place when this sound
+          plays.
         </p>
       </div>
       <div style={{ position: "fixed", bottom: "20px", right: "20px" }}>

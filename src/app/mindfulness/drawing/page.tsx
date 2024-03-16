@@ -9,7 +9,7 @@ export default function StressCoper() {
     router.push("/");
   };
   const handleClick2 = () => {
-    router.push("/mindfulness/visualization");
+    router.push("/mindfulness/listening");
   };
   const handleClickBack = () => {
     router.back();
@@ -72,10 +72,12 @@ export default function StressCoper() {
         </div>
       </nav>
       <div style={{ marginTop: "80px", textAlign: "center", flexGrow: "1" }}>
-        <h1 style={{ color: "#000000", fontSize: "40px" }}>Mindfulness</h1>
+        <h1 style={{ color: "#000000", fontSize: "40px" }}>Drawing</h1>
         <p>
-          Be aware of the 5 senses! Follow this mindfulness journey and become
-          one with what you sense around you!
+          Now we are taking it a bit further. You still need pen and paper. What
+          do you see, hear, smell, taste and feel here? Draw this place, using
+          what you know from your senses. How does the different senses shape
+          your place?
         </p>
       </div>
       <div style={{ position: "fixed", bottom: "20px", right: "20px" }}>

@@ -9,7 +9,7 @@ export default function StressCoper() {
     router.push("/");
   };
   const handleClick2 = () => {
-    router.push("/mindfulness/visualization");
+    router.push("/mindfulness/writing");
   };
   const handleClickBack = () => {
     router.back();
@@ -72,12 +72,19 @@ export default function StressCoper() {
         </div>
       </nav>
       <div style={{ marginTop: "80px", textAlign: "center", flexGrow: "1" }}>
-        <h1 style={{ color: "#000000", fontSize: "40px" }}>Mindfulness</h1>
+        <h1 style={{ color: "#000000", fontSize: "40px" }}>Visualization</h1>
         <p>
-          Be aware of the 5 senses! Follow this mindfulness journey and become
-          one with what you sense around you!
+          Focus on a place you feel at ease. What do you see, hear, smell, taste
+          and feel here? Visualize this place using these senses in your mind.
         </p>
       </div>
+      <div style={{ marginTop: "60px", textAlign: "center" }}>
+        <audio controls>
+          <source src="/visualization-guide.mp3" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
       <div style={{ position: "fixed", bottom: "20px", right: "20px" }}>
         <button
           style={{

@@ -1,19 +1,10 @@
 // stressCoper.tsx
 "use client";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/navigation"; // Correct import for useRouter
 import { FaHome } from "react-icons/fa";
 
-export default function StressCoper() {
+export default function MentalHealthInfo() {
   const router = useRouter();
-  const handleClick1 = () => {
-    router.push("/");
-  };
-  const handleClick2 = () => {
-    router.push("/breathe");
-  };
-  const handleClickBack = () => {
-    router.back();
-  };
 
   return (
     <main
@@ -39,8 +30,13 @@ export default function StressCoper() {
       >
         <div style={{ display: "flex", alignItems: "center" }}>
           <FaHome
-            onClick={handleClick1}
-            style={{ color: "#FFFFFF", marginRight: "10px", fontSize: "45px" }}
+            onClick={() => router.push("/")}
+            style={{
+              color: "#FFFFFF",
+              marginRight: "10px",
+              fontSize: "45px",
+              cursor: "pointer",
+            }}
           />
           <h1
             style={{
@@ -54,45 +50,87 @@ export default function StressCoper() {
           </h1>
         </div>
       </nav>
-      <div style={{ marginTop: "80px", textAlign: "center", flexGrow: "1" }}>
-        <h1 style={{ color: "#000000", fontSize: "40px" }}>Stress-coper</h1>
+      <div style={{ marginTop: "60px", textAlign: "center" }}>
+        <img
+          src="/mental-health-illustration.webp"
+          alt="Serene Landscape"
+          style={{ maxWidth: "30%", height: "auto" }}
+        />
+      </div>
+      <div
+        style={{
+          marginTop: "100px",
+          width: "90%",
+          textAlign: "center",
+          flexGrow: "1",
+        }}
+      >
+        <h2
+          style={{ color: "#000000", fontSize: "35px", marginBottom: "20px" }}
+        >
+          Understanding Mental Health
+        </h2>
         <p>
-          The stress-coper is a relaxing journey where you can take a break,
-          cope with stress and meet some nice suprises along the way. It lasts
-          10 minutes, but you can quit at any moment. Have a relaxing trip!
+          Mental health includes our emotional, psychological, and social
+          well-being. It affects how we think, feel, and act. It also helps
+          determine how we handle stress, relate to others, and make choices.
+          Positive mental health is essential at every stage of life, from
+          childhood and adolescence through adulthood.
         </p>
-      </div>
-      <div style={{ position: "fixed", bottom: "20px", right: "20px" }}>
-        <button
-          style={{
-            backgroundColor: "#548E87",
-            color: "#FFFFFF",
-            padding: "10px 20px",
-            border: "none",
-            borderRadius: "5px",
-            fontSize: "16px",
-          }}
-        >
-          <span onClick={handleClick2} style={{ transition: "0.3s" }}>
-            Next{" "}
-          </span>
-        </button>
-      </div>
-      <div style={{ position: "fixed", bottom: "20px", left: "20px" }}>
-        <button
-          onClick={handleClickBack}
-          style={{
-            backgroundColor: "#548E87",
-            color: "#FFFFFF",
-            padding: "10px 20px",
-            border: "none",
-            borderRadius: "5px",
-            fontSize: "16px",
-            cursor: "pointer",
-          }}
-        >
-          Back
-        </button>
+        <div style={{ marginTop: "30px" }}>
+          <h3 style={{ color: "#000000", fontSize: "30px" }}>
+            Resources for Help
+          </h3>
+          <ul style={{ listStyleType: "none" }}>
+            <li>
+              <a
+                href="https://www.mentalhealth.gov/"
+                target="_blank"
+                rel="noreferrer"
+                style={{ color: "#548E87" }}
+              >
+                MentalHealth.gov
+              </a>
+              - For immediate help and resources.
+            </li>
+            <li>
+              <a
+                href="https://www.nami.org/"
+                target="_blank"
+                rel="noreferrer"
+                style={{ color: "#548E87" }}
+              >
+                National Alliance on Mental Illness (NAMI)
+              </a>
+              - Support and education for individuals and families.
+            </li>
+            <li>
+              <a
+                href="https://www.who.int/teams/mental-health-and-substance-use"
+                target="_blank"
+                rel="noreferrer"
+                style={{ color: "#548E87" }}
+              >
+                World Health Organization: Mental Health
+              </a>
+              - Global resources and information.
+            </li>
+          </ul>
+        </div>
+        <div style={{ marginTop: "20px" }}>
+          <h3 style={{ color: "#000000", fontSize: "30px" }}>Self-Care Tips</h3>
+          <p>
+            Taking care of yourself physically can improve your mental health.
+            Be sure to:
+          </p>
+          <ul>
+            <li>Eat nutritious meals</li>
+            <li>Get enough sleep</li>
+            <li>Stay active</li>
+            <li>Try to maintain a routine</li>
+            <li>Stay connected with loved ones</li>
+          </ul>
+        </div>
       </div>
     </main>
   );

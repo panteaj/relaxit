@@ -9,7 +9,7 @@ export default function StressCoper() {
     router.push("/");
   };
   const handleClick2 = () => {
-    router.push("/mindfulness/visualization");
+    router.push("/");
   };
   const handleClickBack = () => {
     router.back();
@@ -72,10 +72,13 @@ export default function StressCoper() {
         </div>
       </nav>
       <div style={{ marginTop: "80px", textAlign: "center", flexGrow: "1" }}>
-        <h1 style={{ color: "#000000", fontSize: "40px" }}>Mindfulness</h1>
+        <h1 style={{ color: "#000000", fontSize: "40px" }}>Eating</h1>
         <p>
-          Be aware of the 5 senses! Follow this mindfulness journey and become
-          one with what you sense around you!
+          Now, after that happened, you feel like you need a snack. Maybe a
+          raisin. Imagine eating this raisin, still at your good place. Use your
+          senses to take in the sensation of eating it. How does it taste, how
+          does the texture feel, what does it look like, what is the smell like
+          and what does it sound like when eating it?
         </p>
       </div>
       <div style={{ position: "fixed", bottom: "20px", right: "20px" }}>
