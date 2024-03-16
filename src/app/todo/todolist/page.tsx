@@ -38,6 +38,9 @@ const Todo: React.FC = () => {
   const handleClickBack = () => {
     router.back();
   };
+  const handleOverview = () => {
+    router.push("/stresscoper/overview");
+  };
 
   const handleAddTask = (day: keyof TaskLists) => {
     const taskToAdd = newTask[day]?.trim();

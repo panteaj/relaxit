@@ -17,6 +17,9 @@ export default function StressCoper() {
         setTime((prevTime) => prevTime + 1);
       }, 1000);
     }
+    const handleOverview = () => {
+      router.push("/stresscoper/overview");
+    };
 
     return () => {
       if (timerId) clearInterval(timerId);

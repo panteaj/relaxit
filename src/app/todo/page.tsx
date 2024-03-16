@@ -14,6 +14,9 @@ export default function todo() {
   const handleClickBack = () => {
     router.back();
   };
+  const handleOverview = () => {
+    router.push("/stresscoper/overview");
+  };
 
   return (
     <main

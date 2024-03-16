@@ -14,6 +14,9 @@ export default function StressCoper() {
   const handleClickBack = () => {
     router.back();
   };
+  const handleOverview = () => {
+    router.push("/stresscoper/overview");
+  };
 
   return (
     <main
@@ -52,14 +55,29 @@ export default function StressCoper() {
           >
             RelaxIt
           </h1>
+          <button
+            onClick={handleOverview}
+            style={{
+              backgroundColor: "#B1E8ED",
+              color: "#000000",
+              padding: "10px 20px",
+              border: "none",
+              borderRadius: "5px",
+              fontSize: "16px",
+              cursor: "pointer",
+            }}
+          >
+            Overview
+          </button>
         </div>
       </nav>
+
       <div style={{ marginTop: "80px", textAlign: "center", flexGrow: "1" }}>
         <h1 style={{ color: "#000000", fontSize: "40px" }}>Stress-coper</h1>
         <p>
           The stress-coper is a relaxing journey where you can take a break,
-          cope with stress and meet some nice suprises along the way. It lasts
-          10 minutes, but you can quit at any moment. Have a relaxing trip!
+          cope with stress and meet some nice suprises along the way. You can
+          quit at any moment. Have a relaxing trip!
         </p>
       </div>
       <div style={{ position: "fixed", bottom: "20px", right: "20px" }}>
