@@ -10,11 +10,11 @@ export default function breathe() {
   const [isAnimating, setIsAnimating] = useState(true);
 
   const handleClick1 = () => {
-    router.back();
+    router.push("/");
   };
 
   const handleClick2 = () => {
-    router.push("/breathe");
+    router.push("/gratitude");
   };
 
   const handleStartClick = () => {
