@@ -35,6 +35,9 @@ const Todo: React.FC = () => {
   const handleCheckboxChange = (event: ChangeEvent<HTMLInputElement>) => {
     setShowLines(event.target.checked);
   };
+  const handleClickBack = () => {
+    router.back();
+  };
 
   const handleAddTask = (day: keyof TaskLists) => {
     const taskToAdd = newTask[day]?.trim();
@@ -220,6 +223,22 @@ const Todo: React.FC = () => {
           Next
         </button>
       </footer>
+      <div style={{ position: "fixed", bottom: "20px", left: "20px" }}>
+        <button
+          onClick={handleClickBack}
+          style={{
+            backgroundColor: "#548E87",
+            color: "#FFFFFF",
+            padding: "10px 20px",
+            border: "none",
+            borderRadius: "5px",
+            fontSize: "16px",
+            cursor: "pointer",
+          }}
+        >
+          Back
+        </button>
+      </div>
     </main>
   );
 };

@@ -11,6 +11,9 @@ export default function todo() {
   const handleClick2 = () => {
     router.push("/todo/todolist");
   };
+  const handleClickBack = () => {
+    router.back();
+  };
 
   return (
     <main
@@ -77,6 +80,22 @@ export default function todo() {
           <span onClick={handleClick2} style={{ transition: "0.3s" }}>
             Next{" "}
           </span>
+        </button>
+      </div>
+      <div style={{ position: "fixed", bottom: "20px", left: "20px" }}>
+        <button
+          onClick={handleClickBack}
+          style={{
+            backgroundColor: "#548E87",
+            color: "#FFFFFF",
+            padding: "10px 20px",
+            border: "none",
+            borderRadius: "5px",
+            fontSize: "16px",
+            cursor: "pointer",
+          }}
+        >
+          Back
         </button>
       </div>
     </main>

@@ -11,6 +11,9 @@ export default function Gratitude() {
   const handleClick2 = () => {
     router.push("/todo");
   };
+  const handleClickBack = () => {
+    router.back();
+  };
 
   return (
     <main
@@ -133,6 +136,22 @@ export default function Gratitude() {
         >
           <span onClick={handleClick2} style={{ transition: "0.3s" }}>
             Next{" "}
+          </span>
+        </button>
+      </div>
+      <div style={{ position: "fixed", bottom: "20px", left: "20px" }}>
+        <button
+          style={{
+            backgroundColor: "#548E87",
+            color: "#FFFFFF",
+            padding: "10px 20px",
+            border: "none",
+            borderRadius: "5px",
+            fontSize: "16px",
+          }}
+        >
+          <span onClick={handleClickBack} style={{ transition: "0.3s" }}>
+            Back{" "}
           </span>
         </button>
       </div>
