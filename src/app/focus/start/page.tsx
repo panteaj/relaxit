@@ -17,9 +17,6 @@ export default function StressCoper() {
         setTime((prevTime) => prevTime + 1);
       }, 1000);
     }
-    const handleOverview = () => {
-      router.push("/stresscoper/overview");
-    };
 
     return () => {
       if (timerId) clearInterval(timerId);
@@ -151,6 +148,20 @@ export default function StressCoper() {
           >
             RelaxIt
           </h1>
+          <button
+            onClick={() => router.push("/stresscoper/overview")}
+            style={{
+              backgroundColor: "#B1E8ED",
+              color: "#000000",
+              padding: "10px 20px",
+              border: "none",
+              borderRadius: "5px",
+              fontSize: "16px",
+              cursor: "pointer",
+            }}
+          >
+            Overview
+          </button>
         </div>
       </nav>
 

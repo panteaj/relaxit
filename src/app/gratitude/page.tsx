@@ -54,6 +54,20 @@ export default function Gratitude() {
           >
             RelaxIt
           </h1>
+          <button
+            onClick={handleOverview}
+            style={{
+              backgroundColor: "#B1E8ED",
+              color: "#000000",
+              padding: "10px 20px",
+              border: "none",
+              borderRadius: "5px",
+              fontSize: "16px",
+              cursor: "pointer",
+            }}
+          >
+            Overview
+          </button>
         </div>
       </nav>
       <div style={{ marginTop: "80px", textAlign: "center", flexGrow: "1" }}>

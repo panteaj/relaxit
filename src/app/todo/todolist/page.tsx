@@ -41,6 +41,9 @@ const Todo: React.FC = () => {
   const handleOverview = () => {
     router.push("/stresscoper/overview");
   };
+  const handleClick1 = () => {
+    router.push("/");
+  };
 
   const handleAddTask = (day: keyof TaskLists) => {
     const taskToAdd = newTask[day]?.trim();
@@ -101,28 +104,43 @@ const Todo: React.FC = () => {
         style={{
           backgroundColor: "#B1E8ED",
           padding: "10px",
+          textAlign: "center",
           width: "100%",
           position: "fixed",
           top: "0",
           zIndex: "1000",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
         }}
       >
-        <FaHome
-          onClick={() => router.push("/")}
-          style={{
-            color: "#FFFFFF",
-            marginLeft: "10px",
-            fontSize: "45px",
-            cursor: "pointer",
-          }}
-        />
-        <h1 style={{ fontSize: "45px", margin: "0", color: "#FFFFFF" }}>
-          RelaxIt
-        </h1>
-        <div style={{ width: "45px" }} /> {/* Spacer for centering the title */}
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <FaHome
+            onClick={handleClick1}
+            style={{ color: "#FFFFFF", marginRight: "10px", fontSize: "45px" }}
+          />
+          <h1
+            style={{
+              fontSize: "45px",
+              margin: "0",
+              color: "#FFFFFF",
+              flexGrow: "1",
+            }}
+          >
+            RelaxIt
+          </h1>
+          <button
+            onClick={handleOverview}
+            style={{
+              backgroundColor: "#B1E8ED",
+              color: "#000000",
+              padding: "10px 20px",
+              border: "none",
+              borderRadius: "5px",
+              fontSize: "16px",
+              cursor: "pointer",
+            }}
+          >
+            Overview
+          </button>
+        </div>
       </nav>
 
       <div style={{ marginTop: "100px", textAlign: "center", width: "100%" }}>
