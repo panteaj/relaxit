@@ -9,13 +9,13 @@ export default function StressCoper() {
     router.push("/");
   };
   const handleClick2 = () => {
-    router.push("/mindfulness/visualization");
+    router.push("/breathe");
   };
   const handleClickBack = () => {
     router.back();
   };
   const handleOverview = () => {
-    router.push("/mindfulness/overview");
+    router.push("/stresscoper/overview");
   };
 
   return (
@@ -71,20 +71,13 @@ export default function StressCoper() {
           </button>
         </div>
       </nav>
+
       <div style={{ marginTop: "80px", textAlign: "center", flexGrow: "1" }}>
-        <h1 style={{ color: "#000000", fontSize: "40px" }}>Mindfulness</h1>
-        <p
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            marginTop: "40px",
-            width: "100%",
-            textAlign: "center",
-          }}
-        >
-          Be aware of the 5 senses! Follow this mindfulness journey and become
-          one with what you sense around you!
+        <h1 style={{ color: "#000000", fontSize: "40px" }}>Stress-coper</h1>
+        <p>
+          The stress-coper is a relaxing journey where you can take a break,
+          cope with stress and meet some nice suprises along the way. You can
+          quit at any moment. Have a relaxing trip!
         </p>
       </div>
       <div style={{ position: "fixed", bottom: "20px", right: "20px" }}>

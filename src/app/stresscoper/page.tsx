@@ -71,15 +71,21 @@ export default function StressCoper() {
           </button>
         </div>
       </nav>
-
-      <div style={{ marginTop: "80px", textAlign: "center", flexGrow: "1" }}>
+      <div
+        style={{
+          marginTop: "80px",
+          textAlign: "center",
+          flexGrow: "1",
+          maxWidth: "800px",
+        }}
+      >
         <h1 style={{ color: "#000000", fontSize: "40px" }}>Stress-coper</h1>
         <p>
           The stress-coper is a relaxing journey where you can take a break,
           cope with stress and meet some nice suprises along the way. You can
           quit at any moment. Have a relaxing trip!
         </p>
-      </div>
+      </div>{" "}
       <div style={{ position: "fixed", bottom: "20px", right: "20px" }}>
         <button
           style={{

@@ -9,13 +9,13 @@ export default function StressCoper() {
     router.push("/");
   };
   const handleClick2 = () => {
-    router.push("/mindfulness/visualization");
+    router.push("/stresscoper");
   };
   const handleClickBack = () => {
     router.back();
   };
   const handleOverview = () => {
-    router.push("/mindfulness/overview");
+    router.push("/stresscoper/overview");
   };
 
   return (
@@ -55,36 +55,23 @@ export default function StressCoper() {
           >
             RelaxIt
           </h1>
-          <button
-            onClick={handleOverview}
-            style={{
-              backgroundColor: "#B1E8ED",
-              color: "#000000",
-              padding: "10px 20px",
-              border: "none",
-              borderRadius: "5px",
-              fontSize: "16px",
-              cursor: "pointer",
-            }}
-          >
-            Overview
-          </button>
         </div>
       </nav>
-      <div style={{ marginTop: "80px", textAlign: "center", flexGrow: "1" }}>
-        <h1 style={{ color: "#000000", fontSize: "40px" }}>Mindfulness</h1>
-        <p
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            marginTop: "40px",
-            width: "100%",
-            textAlign: "center",
-          }}
-        >
-          Be aware of the 5 senses! Follow this mindfulness journey and become
-          one with what you sense around you!
+
+      <div
+        style={{
+          marginTop: "80px",
+          textAlign: "center",
+          flexGrow: "1",
+          maxWidth: "800px",
+        }}
+      >
+        <h1 style={{ color: "#000000", fontSize: "40px" }}>Stress-coper</h1>
+        <p>
+          {" "}
+          In this section, you will find a variety of strategies and exercises
+          to help you manage stress. Explore breathing techniques, guided
+          meditations, and more to find what works best for you.
         </p>
       </div>
       <div style={{ position: "fixed", bottom: "20px", right: "20px" }}>
@@ -99,7 +86,7 @@ export default function StressCoper() {
           }}
         >
           <span onClick={handleClick2} style={{ transition: "0.3s" }}>
-            Next{" "}
+            Begin{" "}
           </span>
         </button>
       </div>

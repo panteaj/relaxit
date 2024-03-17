@@ -15,9 +15,18 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+.card-background {
+  background-color: #cdffe1;
+}
+.text-color {
+  color: #548e87;
+}
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+body {
+  font-family: "Open Sans", sans-serif;
 }

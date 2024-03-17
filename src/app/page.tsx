@@ -1,91 +1,105 @@
 "use client";
 import { useRouter } from "next/navigation";
+
 export default function Home() {
   const router = useRouter();
-  const handleClick1 = () => {
-    router.push("/stresscoper");
-  };
-  const handleClick2 = () => {
-    router.push("/mindfulness");
-  };
-  const handleClick3 = () => {
-    router.push("/information");
+  const handleClick = (path: string) => {
+    router.push(path);
   };
 
   return (
     <main
-      className="flex min-h-screen flex-col items-center justify-between p-24 bg-blue-100"
-      style={{ fontFamily: "Arial, sans-serif" }}
+      className="flex min-h-screen flex-col items-center justify-center p-6 bg-gradient-to-br from-teal-300 to-peach-100"
+      style={{
+        fontFamily: "'Open Sans', sans-serif",
+        backgroundImage: "url('/mentalinfo.webp')",
+        backgroundSize: "cover",
+      }}
     >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        {/* Removed the Get started by editing src/app/page.tsx part */}
-      </div>
+      <header className="w-full py-4">
+        <nav className="flex items-center justify-between">
+          {/* Include your navigation items here */}
+        </nav>
+      </header>
 
-      {/* Big welcome text */}
-      <h1 className="text-5xl text-center mb-8">Welcome to RelaxIT</h1>
+      <h1
+        className="text-6xl font-bold text-center mb-12"
+        style={{ color: "#548E87" }}
+      >
+        Welcome to RelaxIt
+      </h1>
 
-      {/* Square menu */}
-      <div className="bg-yellow-100 rounded-lg p-10 text-center">
-        <h2 className="text-2xl mb-4">What would you want to do?</h2>
-        <div className="flex flex-col gap-4">
-          <a
-            onClick={handleClick1}
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-green-300 hover:bg-green-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            style={{ backgroundColor: "#548E87" }}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={`px-4 py-2 text-white rounded-lg`}>
-              Stress-coper
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                -&gt;
-              </span>
-            </h2>
-            <p className={`m-0 max-w-[50ch] text-sm opacity-50`}>
-              Learn activities to cope with stress!
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Card 1 */}
+        <div className="rounded-xl bg-white p-6 shadow-lg transition-transform hover:scale-105">
+          <div onClick={() => handleClick("/stresscoper")}>
+            <div className="flex items-center justify-between mb-4">
+              {/* Your icon here */}
+              <h2 className="text-xl font-semibold text-color">
+                Stress-coping
+              </h2>
+              {/* Your icon here */}
+            </div>
+            <p className="mb-4 text-color">
+              Discover soothing practices and routines to manage daily stress
+              and improve your emotional well-being.
             </p>
-          </a>
+          </div>
+          <button
+            onClick={() => handleClick("/redmore/readmorestress")}
+            className="rounded-lg bg-teal-500 text-white px-4 py-2 transition-colors hover:bg-teal-600"
+          >
+            Read More
+          </button>
+        </div>
 
-          <a
-            onClick={handleClick2}
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-green-300 hover:bg-green-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            style={{ backgroundColor: "#548E87" }}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={`px-4 py-2 text-white rounded-lg`}>
-              Mindfulness
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                -&gt;
-              </span>
-            </h2>
-            <p className={`m-0 max-w-[50ch] text-sm opacity-50`}>
-              Do some mindfulness!
+        {/* Card 2 */}
+        <div className="rounded-xl bg-white p-6 shadow-lg transition-transform hover:scale-105">
+          <div onClick={() => handleClick("/mindfulness")}>
+            <div className="flex items-center justify-between mb-4">
+              {/* Your icon here */}
+              <h2 className="text-xl font-semibold text-color">Mindfulness</h2>
+              {/* Your icon here */}
+            </div>
+            <p className="mb-4 text-color">
+              Engage in mindful exercises that bring attention and awareness to
+              the present moment for a peaceful mind.
             </p>
-          </a>
-          <a
-            onClick={handleClick3}
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-green-300 hover:bg-green-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            style={{ backgroundColor: "#548E87" }}
-            target="_blank"
-            rel="noopener noreferrer"
+          </div>
+          <button
+            onClick={() => handleClick("/redmore/readmoremindfulness")}
+            className="rounded-lg bg-teal-500 text-white px-4 py-2 transition-colors hover:bg-teal-600"
           >
-            <h2 className={`px-4 py-2 text-white rounded-lg`}>
-              Help information
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                -&gt;
-              </span>
-            </h2>
-            <p className={`m-0 max-w-[50ch] text-sm opacity-50`}>
-              Get some tips and information about help services!
+            Read More
+          </button>
+        </div>
+
+        {/* Card 3 */}
+        <div className="rounded-xl bg-white p-6 shadow-lg transition-transform hover:scale-105">
+          {" "}
+          <div onClick={() => handleClick("/information")}>
+            <div className="flex items-center justify-between mb-4">
+              {/* Your icon here */}
+              <h2 className="text-xl font-semibold text-color">
+                Help Information
+              </h2>
+              {/* Your icon here */}
+            </div>
+            <p className="mb-4 text-color">
+              Find valuable resources and support to assist you in navigating
+              life's challenges. Learn about mental health and wellness.
             </p>
-          </a>
+          </div>
+          <button
+            onClick={() => handleClick("/redmore")}
+            className="rounded-lg bg-teal-500 text-white px-4 py-2 transition-colors hover:bg-teal-600"
+          >
+            Read More
+          </button>
         </div>
       </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        {/* Links to Next.js documentation, learning resources, templates, and deployment */}
-      </div>
+      {/* Footer or additional content goes here */}
     </main>
   );
 }
