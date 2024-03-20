@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import { FaHome } from "react-icons/fa";
 
-export default function todo() {
+export default function useTodo() {
   const router = useRouter();
   const handleClick1 = () => {
     router.push("/");
@@ -15,7 +15,7 @@ export default function todo() {
     router.back();
   };
   const handleOverview = () => {
-    router.push("/stresscoper/overview");
+    router.push("/stresscoper/menu");
   };
 
   return (
@@ -67,7 +67,7 @@ export default function todo() {
               cursor: "pointer",
             }}
           >
-            Overview
+            Menu
           </button>
         </div>
       </nav>

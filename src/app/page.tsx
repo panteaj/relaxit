@@ -35,6 +35,7 @@ export default function Home() {
           <div onClick={() => handleClick("/stresscoper")}>
             <div className="flex items-center justify-between mb-4">
               {/* Your icon here */}
+
               <h2 className="text-xl font-semibold text-color">
                 Stress-coping
               </h2>
@@ -87,7 +88,7 @@ export default function Home() {
             </div>
             <p className="mb-4 text-color">
               Find valuable resources and support to assist you in navigating
-              life's challenges. Learn about mental health and wellness.
+              challenges of life. Learn about mental health and wellness.
             </p>
           </div>
           <button

@@ -15,7 +15,7 @@ export default function StressCoper() {
     router.back();
   };
   const handleOverview = () => {
-    router.push("/mindfulness/overview");
+    router.push("/mindfulness/menu");
   };
 
   return (
@@ -67,7 +67,7 @@ export default function StressCoper() {
               cursor: "pointer",
             }}
           >
-            Overview
+            Menu
           </button>
         </div>
       </nav>

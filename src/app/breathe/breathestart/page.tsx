@@ -1,21 +1,14 @@
 "use client";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
-import { FaArrowRight, FaHome } from "react-icons/fa";
+import { useEffect, useState } from "react";
+import { FaHome } from "react-icons/fa";
 
 export default function useBreathe() {
   const router = useRouter();
-  const [circleSize, setCircleSize] = useState(300);
-  const [step, setStep] = useState(0); // Tracks which step of the instructions the user is on
-
-  // Function to determine the text based on the step
-  const getCircleText = () => {
-    if (step === 0) {
-      return "Let us take a moment and empty the mind. Think about your breathing.";
-    } else {
-      return "Follow the circle and breathe stay here for as long as you need. To move on, press begin.";
-    }
-  };
+  const [circleSize, setCircleSize] = useState(70); // Initial size of the circle
+  const [isExpanding, setIsExpanding] = useState(true);
+  const [isAnimating, setIsAnimating] = useState(true);
+  const [breathText, setBreathText] = useState("Breathe In"); // State to manage the text
 
   const handleClick1 = () => {
     router.push("/");
@@ -25,11 +18,58 @@ export default function useBreathe() {
   };
 
   const handleClick2 = () => {
-    router.push("/breathe/breathestart");
+    router.push("/gratitude");
   };
   const handleClickBack = () => {
     router.back();
   };
+  const handleStartClick = () => {
+    setIsAnimating(true);
+  };
+
+  const handleStopClick = () => {
+    setIsAnimating(false);
+  };
+
+  useEffect(() => {
+    let interval: string | number | NodeJS.Timeout | undefined;
+    if (isAnimating) {
+      interval = setInterval(() => {
+        setCircleSize((prevSize) => {
+          // Check if expanding
+          if (isExpanding) {
+            if (prevSize >= 200) {
+              // Pause at max size, then start contracting
+              setTimeout(() => {
+                setIsExpanding(false);
+                setBreathText("Breathe Out"); // Change text after pause
+              }, 1000); // 1 second pause
+              return prevSize;
+            }
+            return prevSize + 150 / 30; // Adjust step size for smooth animation
+          }
+          // Check if contracting
+          else {
+            if (prevSize <= 70) {
+              // Pause at min size, then start expanding
+              setTimeout(() => {
+                setIsExpanding(true);
+                setBreathText("Breathe In"); // Change text after pause
+              }, 1000); // 1 second pause
+              return prevSize;
+            }
+            return prevSize - 150 / 30; // Adjust step size for smooth animation
+          }
+        });
+      }, 100); // Execute every 100ms for smoother transition
+    } else {
+      clearInterval(interval);
+    }
+
+    return () => clearInterval(interval);
+  }, [isAnimating, isExpanding]);
+
+  const textSize = `${circleSize * 0.2}px`;
 
   return (
     <main
@@ -102,57 +142,53 @@ export default function useBreathe() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            fontSize: "23px",
+            fontSize: textSize,
             fontWeight: "bold",
-            transition: "width 1s, height 1s, font-size 1s",
+
             textAlign: "center",
           }}
         >
-          {getCircleText()}
-        </div>{" "}
-        {step === 0 && (
-          <FaArrowRight
-            onClick={() => setStep(step + 1)}
-            className="blink"
-            style={{ fontSize: "60px" }}
-          />
-        )}
+          {breathText} {/* Displaying the dynamic text */}
+        </div>
       </div>
 
       <div
         style={{
-          position: "fixed",
-          bottom: "10px",
           display: "flex",
           justifyContent: "center",
-          width: "100%",
+          marginTop: "20px", // Add space between circle and buttons
         }}
       >
-        <span
-          onClick={() => setStep(0)}
+        <button
+          onClick={handleStartClick}
           style={{
-            height: "10px",
-            width: "10px",
-            backgroundColor: step === 0 ? "#548E87" : "#bbbbbb",
-            borderRadius: "50%",
-            display: "inline-block",
-            margin: "0 5px",
-            cursor: "pointer",
+            backgroundColor: "#548E87",
+            color: "#FFFFFF",
+            padding: "10px 20px",
+            border: "none",
+            borderRadius: "5px",
+            fontSize: "16px",
+            marginRight: "10px",
           }}
-        ></span>
-        <span
-          onClick={() => setStep(1)}
+        >
+          Start
+        </button>
+        <button
+          onClick={handleStopClick}
           style={{
-            height: "10px",
-            width: "10px",
-            backgroundColor: step === 1 ? "#548E87" : "#bbbbbb",
-            borderRadius: "50%",
-            display: "inline-block",
-            margin: "0 5px",
-            cursor: "pointer",
+            backgroundColor: "#FF6B6B",
+            color: "#FFFFFF",
+            padding: "10px 20px",
+            border: "none",
+            borderRadius: "5px",
+            fontSize: "16px",
           }}
-        ></span>
+          className="hover:scale-105 hover:shadow-xl"
+        >
+          Stop
+        </button>
       </div>
+
       <div style={{ position: "fixed", bottom: "20px", right: "20px" }}>
         <button
           style={{
@@ -164,12 +200,19 @@ export default function useBreathe() {
             fontSize: "16px",
           }}
         >
-          <span onClick={handleClick2} style={{ transition: "0.3s" }}>
-            Begin{" "}
+          <span
+            onClick={handleClick2}
+            style={{ transition: "0.3s" }}
+            className="hover:scale-105 hover:shadow-xl"
+          >
+            Next{" "}
           </span>
         </button>
       </div>
-      <div style={{ position: "fixed", bottom: "20px", left: "20px" }}>
+      <div
+        style={{ position: "fixed", bottom: "20px", left: "20px" }}
+        className="hover:scale-105 hover:shadow-xl"
+      >
         <button
           onClick={handleClickBack}
           style={{

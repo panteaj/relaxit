@@ -15,7 +15,7 @@ export default function Gratitude() {
     router.back();
   };
   const handleOverview = () => {
-    router.push("/stresscoper/overview");
+    router.push("/stresscoper/menu");
   };
   return (
     <main
@@ -66,7 +66,7 @@ export default function Gratitude() {
               cursor: "pointer",
             }}
           >
-            Overview
+            Menu
           </button>
         </div>
       </nav>

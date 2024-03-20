@@ -26,6 +26,21 @@
   .text-balance {
     text-wrap: balance;
   }
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .blink {
+    animation: blink 5s infinite;
+  }
 }
 body {
   font-family: "Open Sans", sans-serif;

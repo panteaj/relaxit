@@ -39,7 +39,7 @@ const Todo: React.FC = () => {
     router.back();
   };
   const handleOverview = () => {
-    router.push("/stresscoper/overview");
+    router.push("/stresscoper/menu");
   };
   const handleClick1 = () => {
     router.push("/");
@@ -138,7 +138,7 @@ const Todo: React.FC = () => {
               cursor: "pointer",
             }}
           >
-            Overview
+            Menu
           </button>
         </div>
       </nav>

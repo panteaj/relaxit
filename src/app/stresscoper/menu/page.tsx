@@ -112,6 +112,7 @@ function StressCoper() {
                 cursor: "pointer",
                 transition: "transform 0.2s",
               }}
+              className="shadow-lg transition-transform hover:scale-105"
               onClick={() => navigateTo(activity.route)}
             >
               <h2 style={{ color: "#000000", fontSize: "24px" }}>

@@ -15,7 +15,7 @@ export default function StressCoper() {
     router.back();
   };
   const handleOverview = () => {
-    router.push("/stresscoper/overview");
+    router.push("/stresscoper/menu");
   };
 
   return (
@@ -67,7 +67,7 @@ export default function StressCoper() {
               cursor: "pointer",
             }}
           >
-            Overview
+            Menu
           </button>
         </div>
       </nav>
@@ -79,14 +79,19 @@ export default function StressCoper() {
           maxWidth: "800px",
         }}
       >
-        <h1 style={{ color: "#000000", fontSize: "40px" }}>Stress-coper</h1>
+        <h1 style={{ color: "#000000", fontSize: "40px" }}>Stress-coper</h1>{" "}
         <p>
           The stress-coper is a relaxing journey where you can take a break,
           cope with stress and meet some nice suprises along the way. You can
-          quit at any moment. Have a relaxing trip!
+          quit at any moment. If you want to see all the activities, click on
+          theMenu to see them all and jump to the one you would like to do. Have
+          a relaxing trip!
         </p>
       </div>{" "}
-      <div style={{ position: "fixed", bottom: "20px", right: "20px" }}>
+      <div
+        style={{ position: "fixed", bottom: "20px", right: "20px" }}
+        className="hover:scale-105 hover:shadow-xl"
+      >
         <button
           style={{
             backgroundColor: "#548E87",
@@ -102,7 +107,10 @@ export default function StressCoper() {
           </span>
         </button>
       </div>
-      <div style={{ position: "fixed", bottom: "20px", left: "20px" }}>
+      <div
+        style={{ position: "fixed", bottom: "20px", left: "20px" }}
+        className="hover:scale-105 hover:shadow-xl"
+      >
         <button
           onClick={handleClickBack}
           style={{

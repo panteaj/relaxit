@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { FaHome } from "react-icons/fa";
 
-export default function grounding() {
+export default function useGrounding() {
   const router = useRouter();
   const handleClickHome = () => {
     router.push("/");
@@ -34,7 +34,7 @@ export default function grounding() {
     router.back();
   };
   const handleOverview = () => {
-    router.push("/stresscoper/overview");
+    router.push("/stresscoper/menu");
   };
 
   return (
@@ -91,7 +91,7 @@ export default function grounding() {
               cursor: "pointer",
             }}
           >
-            Overview
+            Menu
           </button>
         </div>
       </nav>

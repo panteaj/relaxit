@@ -149,7 +149,7 @@ export default function StressCoper() {
             RelaxIt
           </h1>
           <button
-            onClick={() => router.push("/stresscoper/overview")}
+            onClick={() => router.push("/stresscoper/menu")}
             style={{
               backgroundColor: "#B1E8ED",
               color: "#000000",
@@ -160,7 +160,7 @@ export default function StressCoper() {
               cursor: "pointer",
             }}
           >
-            Overview
+            Menu
           </button>
         </div>
       </nav>
