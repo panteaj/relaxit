@@ -70,10 +70,18 @@ export default function Gratitude() {
           </button>
         </div>
       </nav>
-      <div style={{ marginTop: "80px", textAlign: "center", flexGrow: "1" }}>
+      <div
+        style={{
+          marginTop: "80px",
+          textAlign: "center",
+          flexGrow: "1",
+          maxWidth: "800px",
+        }}
+      >
         <h1 style={{ color: "#000000", fontSize: "40px" }}>
+          {" "}
           StressCoper: Gratitude Practice
-        </h1>
+        </h1>{" "}
         <p>
           We often give in to negativity and forget the positive things we have
           and experience daily. This part of the stress coper will have you
@@ -81,7 +89,10 @@ export default function Gratitude() {
           down three things you are grateful for today!
         </p>
       </div>
-      <div style={{ position: "fixed", bottom: "20px", right: "20px" }}>
+      <div
+        style={{ position: "fixed", bottom: "20px", right: "20px" }}
+        className="hover:scale-105 hover:shadow-xl"
+      >
         <button
           style={{
             backgroundColor: "#548E87",
@@ -97,7 +108,10 @@ export default function Gratitude() {
           </span>
         </button>
       </div>
-      <div style={{ position: "fixed", bottom: "20px", left: "20px" }}>
+      <div
+        style={{ position: "fixed", bottom: "20px", left: "20px" }}
+        className="hover:scale-105 hover:shadow-xl"
+      >
         <button
           style={{
             backgroundColor: "#548E87",

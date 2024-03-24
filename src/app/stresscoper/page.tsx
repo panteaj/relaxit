@@ -84,8 +84,8 @@ export default function StressCoper() {
           The stress-coper is a relaxing journey where you can take a break,
           cope with stress and meet some nice suprises along the way. You can
           quit at any moment. If you want to see all the activities, click on
-          theMenu to see them all and jump to the one you would like to do. Have
-          a relaxing trip!
+          the menu to see them all and jump to the one you would like to do.
+          Have a relaxing trip!
         </p>
       </div>{" "}
       <div
