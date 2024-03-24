@@ -71,15 +71,41 @@ export default function StressCoper() {
           </button>
         </div>
       </nav>
-      <div style={{ marginTop: "80px", textAlign: "center", flexGrow: "1" }}>
+      <div
+        style={{
+          marginTop: "80px",
+          textAlign: "center",
+          flexGrow: "1",
+          maxWidth: "800px",
+        }}
+      >
         <h1 style={{ color: "#000000", fontSize: "40px" }}>Writing</h1>
         <p>
-          Continue to focus on that place. Take a piece of paper and a pen. What
-          do you see, hear, smell, taste and feel here? Note it down, focusing
-          only on the senses.
+          Continue to focus on that place. Take a piece of paper and a pen or
+          write in the area below. What do you see, hear, smell, taste and feel
+          here? Note it down, focusing only on the senses.
         </p>
+        <textarea
+          style={{
+            backgroundColor: "#B1E8ED", // Dynamic color based on state
+            borderColor: "000000",
+            width: "100%",
+            height: "200px",
+            marginTop: "20px",
+          }}
+        ></textarea>
       </div>
-      <div style={{ position: "fixed", bottom: "20px", right: "20px" }}>
+      <div style={{ marginTop: "60px", textAlign: "center" }}>
+        <audio controls>
+          <source src="/writingtask.mp3" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div
+        style={{ position: "fixed", bottom: "20px", right: "20px" }}
+        className="hover:scale-105 hover:shadow-xl"
+      >
         <button
           style={{
             backgroundColor: "#548E87",
@@ -95,7 +121,10 @@ export default function StressCoper() {
           </span>
         </button>
       </div>
-      <div style={{ position: "fixed", bottom: "20px", left: "20px" }}>
+      <div
+        style={{ position: "fixed", bottom: "20px", left: "20px" }}
+        className="hover:scale-105 hover:shadow-xl"
+      >
         <button
           onClick={handleClickBack}
           style={{

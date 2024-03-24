@@ -86,7 +86,10 @@ export default function StressCoper() {
         </audio>
       </div>
 
-      <div style={{ position: "fixed", bottom: "20px", right: "20px" }}>
+      <div
+        style={{ position: "fixed", bottom: "20px", right: "20px" }}
+        className="hover:scale-105 hover:shadow-xl"
+      >
         <button
           style={{
             backgroundColor: "#548E87",
@@ -102,7 +105,10 @@ export default function StressCoper() {
           </span>
         </button>
       </div>
-      <div style={{ position: "fixed", bottom: "20px", left: "20px" }}>
+      <div
+        style={{ position: "fixed", bottom: "20px", left: "20px" }}
+        className="hover:scale-105 hover:shadow-xl"
+      >
         <button
           onClick={handleClickBack}
           style={{

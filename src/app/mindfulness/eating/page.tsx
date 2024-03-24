@@ -81,7 +81,16 @@ export default function StressCoper() {
           and what does it sound like when eating it?
         </p>
       </div>
-      <div style={{ position: "fixed", bottom: "20px", right: "20px" }}>
+      <div style={{ marginTop: "60px", textAlign: "center" }}>
+        <audio controls>
+          <source src="/water.mp3" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div
+        style={{ position: "fixed", bottom: "20px", right: "20px" }}
+        className="hover:scale-105 hover:shadow-xl"
+      >
         <button
           style={{
             backgroundColor: "#548E87",
@@ -93,11 +102,14 @@ export default function StressCoper() {
           }}
         >
           <span onClick={handleClick2} style={{ transition: "0.3s" }}>
-            Next{" "}
+            End{" "}
           </span>
         </button>
       </div>
-      <div style={{ position: "fixed", bottom: "20px", left: "20px" }}>
+      <div
+        style={{ position: "fixed", bottom: "20px", left: "20px" }}
+        className="hover:scale-105 hover:shadow-xl"
+      >
         <button
           onClick={handleClickBack}
           style={{

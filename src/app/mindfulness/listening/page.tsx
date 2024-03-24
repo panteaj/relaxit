@@ -79,7 +79,16 @@ export default function StressCoper() {
           plays.
         </p>
       </div>
-      <div style={{ position: "fixed", bottom: "20px", right: "20px" }}>
+      <div style={{ marginTop: "60px", textAlign: "center" }}>
+        <audio controls>
+          <source src="/birds.mp3" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div
+        style={{ position: "fixed", bottom: "20px", right: "20px" }}
+        className="hover:scale-105 hover:shadow-xl"
+      >
         <button
           style={{
             backgroundColor: "#548E87",
@@ -95,7 +104,10 @@ export default function StressCoper() {
           </span>
         </button>
       </div>
-      <div style={{ position: "fixed", bottom: "20px", left: "20px" }}>
+      <div
+        style={{ position: "fixed", bottom: "20px", left: "20px" }}
+        className="hover:scale-105 hover:shadow-xl"
+      >
         <button
           onClick={handleClickBack}
           style={{

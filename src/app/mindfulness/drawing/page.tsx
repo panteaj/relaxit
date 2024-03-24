@@ -71,7 +71,14 @@ export default function StressCoper() {
           </button>
         </div>
       </nav>
-      <div style={{ marginTop: "80px", textAlign: "center", flexGrow: "1" }}>
+      <div
+        style={{
+          marginTop: "80px",
+          textAlign: "center",
+          flexGrow: "1",
+          maxWidth: "800px",
+        }}
+      >
         <h1 style={{ color: "#000000", fontSize: "40px" }}>Drawing</h1>
         <p>
           Now we are taking it a bit further. You still need pen and paper. What
@@ -80,7 +87,16 @@ export default function StressCoper() {
           your place?
         </p>
       </div>
-      <div style={{ position: "fixed", bottom: "20px", right: "20px" }}>
+      <div style={{ marginTop: "60px", textAlign: "center" }}>
+        <audio controls>
+          <source src="/drawing.mp3" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div
+        style={{ position: "fixed", bottom: "20px", right: "20px" }}
+        className="hover:scale-105 hover:shadow-xl"
+      >
         <button
           style={{
             backgroundColor: "#548E87",
@@ -96,7 +112,10 @@ export default function StressCoper() {
           </span>
         </button>
       </div>
-      <div style={{ position: "fixed", bottom: "20px", left: "20px" }}>
+      <div
+        style={{ position: "fixed", bottom: "20px", left: "20px" }}
+        className="hover:scale-105 hover:shadow-xl"
+      >
         <button
           onClick={handleClickBack}
           style={{
