@@ -90,6 +90,7 @@ export default function StressCoper() {
             borderRadius: "5px",
             fontSize: "16px",
           }}
+          className="hover:scale-105 hover:shadow-xl"
         >
           <span onClick={handleClick2} style={{ transition: "0.3s" }}>
             Next{" "}
@@ -108,6 +109,7 @@ export default function StressCoper() {
             fontSize: "16px",
             cursor: "pointer",
           }}
+          className="hover:scale-105 hover:shadow-xl"
         >
           Back
         </button>

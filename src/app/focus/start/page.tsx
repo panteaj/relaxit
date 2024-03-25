@@ -240,7 +240,7 @@ export default function StressCoper() {
                 {formatTime()}
               </h1>
               <h2 style={{ textAlign: "center" }}>
-                Want to play a quiz during the break?
+                Want to play a buzzfeed quiz during the break?
               </h2>
             </div>
 
@@ -254,7 +254,7 @@ export default function StressCoper() {
                 zIndex: 1,
               }}
             >
-              Yes -&gt;
+              <h1>Yes, take me to the quiz -&gt;</h1>
             </button>
             <div
               style={{
@@ -262,7 +262,7 @@ export default function StressCoper() {
                 alignItems: "center",
                 position: "absolute",
                 marginTop: "30px",
-                marginLeft: "6%",
+                marginLeft: "10%",
 
                 // Center the buttons
               }}
