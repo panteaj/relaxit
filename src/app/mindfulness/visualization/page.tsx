@@ -79,6 +79,7 @@ export default function StressCoper() {
           and feel here? Visualize this place using these senses in your mind.
         </p>
       </div>
+
       <div style={{ marginTop: "60px", textAlign: "center" }}>
         <audio controls>
           <source src="/visualization-guide.mp3" />
