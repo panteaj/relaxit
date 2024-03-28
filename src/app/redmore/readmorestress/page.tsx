@@ -81,9 +81,7 @@ export default function StressCoper() {
         <p>
           {" "}
           In this section, you will find a variety of strategies and exercises
-          to help you manage stress. Explore breathing techniques, guided
-          meditations, and more to find what works best for you.
-        </p>
+          to help you manage stress. Explore breathing exercises, give yourself some time to focus and scedule and remember what is important for you
       </div>
       <div style={{ position: "fixed", bottom: "20px", right: "20px" }}>
         <button
