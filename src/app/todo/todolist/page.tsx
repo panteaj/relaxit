@@ -147,15 +147,7 @@ const Todo: React.FC = () => {
         <h1 style={{ color: "#000000", fontSize: "40px" }}>
           StressCoper: To Do
         </h1>
-        <label style={{ marginRight: "20px" }}>
-          Show lines
-          <input
-            type="checkbox"
-            checked={showLines}
-            onChange={handleCheckboxChange}
-            style={{ marginLeft: "10px" }}
-          />
-        </label>
+
         <div
           style={{
             display: "flex",
@@ -240,11 +232,15 @@ const Todo: React.FC = () => {
             fontSize: "1rem",
             cursor: "pointer",
           }}
+          className="hover:scale-105 hover:shadow-xl"
         >
           Next
         </button>
       </footer>
-      <div style={{ position: "fixed", bottom: "20px", left: "20px" }}>
+      <div
+        style={{ position: "fixed", bottom: "20px", left: "20px" }}
+        className="hover:scale-105 hover:shadow-xl"
+      >
         <button
           onClick={handleClickBack}
           style={{

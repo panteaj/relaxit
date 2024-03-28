@@ -88,7 +88,8 @@ export default function StressCoper() {
         >
           Focus on the place in the audio. What do you see, hear, smell, taste
           and feel here? <br />
-          Visualize this place using these senses in your mind.
+          Visualize this place using these senses in your mind. Follow the
+          instructions in the audio.
         </p>
       </div>
 

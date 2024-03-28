@@ -84,7 +84,7 @@ export default function StressCoper() {
           Now we are taking it a bit further. You still need pen and paper. What
           do you see, hear, smell, taste and feel here? Draw this place, using
           what you know from your senses. How does the different senses shape
-          your place?
+          your place? <br /> Listen to the audio and follow the instructions.
         </p>
       </div>
       <div style={{ marginTop: "60px", textAlign: "center" }}>

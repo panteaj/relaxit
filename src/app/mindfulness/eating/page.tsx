@@ -81,11 +81,7 @@ export default function StressCoper() {
           senses to take in the sensation of eating it. How does it taste, how
           does the texture feel, what does it look like, what is the smell like
           and what does it sound like when eating it? <br />
-          This mindful eating exercise in the garden setting encourages you to
-          slow down, appreciate the simple joys of eating, and deepen your
-          connection with the natural world. It serves as a reminder of the
-          interdependence between us and the earth, fostering gratitude and
-          mindfulness in our daily lives.
+          Listen to the audio and follow the instructions.
         </p>
       </div>
       <div style={{ marginTop: "60px", textAlign: "center" }}>

@@ -71,7 +71,14 @@ export default function useTodo() {
           </button>
         </div>
       </nav>
-      <div style={{ marginTop: "80px", textAlign: "center", flexGrow: "1" }}>
+      <div
+        style={{
+          marginTop: "80px",
+          textAlign: "center",
+          flexGrow: "1",
+          maxWidth: "800px",
+        }}
+      >
         <h1 style={{ color: "#000000", fontSize: "40px" }}>
           StressCoper: To Do
         </h1>
@@ -80,10 +87,14 @@ export default function useTodo() {
           overwhelming. Therefore, practicing how to organize can be quite
           helpful to step by step follow a plan instead of stressing on all the
           work that need to get done. “To do” will help you step by step gather
-          your to-dos and let you organize your day.
+          your to-dos and let you organize your day. <br /> Take a screenshot of
+          your plan when done!
         </p>
       </div>
-      <div style={{ position: "fixed", bottom: "20px", right: "20px" }}>
+      <div
+        style={{ position: "fixed", bottom: "20px", right: "20px" }}
+        className="hover:scale-105 hover:shadow-xl"
+      >
         <button
           style={{
             backgroundColor: "#548E87",
@@ -99,7 +110,10 @@ export default function useTodo() {
           </span>
         </button>
       </div>
-      <div style={{ position: "fixed", bottom: "20px", left: "20px" }}>
+      <div
+        style={{ position: "fixed", bottom: "20px", left: "20px" }}
+        className="hover:scale-105 hover:shadow-xl"
+      >
         <button
           onClick={handleClickBack}
           style={{

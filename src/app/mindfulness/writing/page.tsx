@@ -84,6 +84,8 @@ export default function StressCoper() {
           Continue to focus on that place. Take a piece of paper and a pen or
           write in the area below. What do you see, hear, smell, taste and feel
           here? Note it down, focusing only on the senses.
+          <br />
+          Listen to the audio and follow the instructions.
         </p>
         <textarea
           style={{
