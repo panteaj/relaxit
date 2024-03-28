@@ -81,9 +81,9 @@ export default function StressCoper() {
         </h1>
         <p>
           {" "}
-          In this section, you will find a variety of strategies and exercises
-          to help you manage stress. Explore breathing techniques, guided
-          meditations, and more to find what works best for you.
+          In this section, you will find information on how to cope with mental
+          health issues and struggles. It also provide places where you can seek
+          help and support.{" "}
         </p>
       </div>
       <div style={{ position: "fixed", bottom: "20px", right: "20px" }}>
