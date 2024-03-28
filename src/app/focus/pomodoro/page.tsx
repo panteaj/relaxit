@@ -1,7 +1,7 @@
 // EnhancedPomodoroTimer.tsx
 "use client";
 import { useRouter } from "next/navigation";
-import React, { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import {
   FaBriefcase,
   FaCoffee,
@@ -22,7 +22,18 @@ export default function EnhancedPomodoroTimer() {
   const shortBreakDuration = 5 * 60;
   const longBreakDuration = 15 * 60;
   const maxCyclesBeforeLongBreak = 4;
-
+  const getCurrentDuration = useCallback(() => {
+    switch (mode) {
+      case "work":
+        return workDuration;
+      case "shortBreak":
+        return shortBreakDuration;
+      case "longBreak":
+        return longBreakDuration;
+      default:
+        return workDuration;
+    }
+  }, [mode, workDuration, shortBreakDuration, longBreakDuration]);
   useEffect(() => {
     let intervalId: NodeJS.Timeout | number;
 
@@ -60,7 +71,7 @@ export default function EnhancedPomodoroTimer() {
     }
 
     return () => clearInterval(intervalId as number);
-  }, [isRunning, mode, cycles, maxCyclesBeforeLongBreak]);
+  }, [isRunning, mode, cycles, maxCyclesBeforeLongBreak, getCurrentDuration]);
 
   const switchMode = () => {
     if (mode === "work") {
@@ -71,19 +82,6 @@ export default function EnhancedPomodoroTimer() {
       );
     } else {
       setMode("work");
-    }
-  };
-
-  const getCurrentDuration = () => {
-    switch (mode) {
-      case "work":
-        return workDuration;
-      case "shortBreak":
-        return shortBreakDuration;
-      case "longBreak":
-        return longBreakDuration;
-      default:
-        return workDuration;
     }
   };
 

@@ -40,6 +40,9 @@ export default function useBreathe() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        // backgroundImage: "url('/back/meditate.webp')",
+
+        //backgroundSize: "cover",
       }}
     >
       <nav
@@ -84,13 +87,27 @@ export default function useBreathe() {
           </button>
         </div>
       </nav>
+      <div>
+        <h1
+          style={{
+            color: "#000000",
+            fontSize: "40px",
+            justifyContent: "center",
+            marginTop: "100px",
+            alignItems: "center",
+            fontWeight: "bold",
+          }}
+        >
+          Breathing{" "}
+        </h1>{" "}
+      </div>
+
       <div
         style={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           height: "calc(100vh - 234px)",
-          marginTop: "100px",
         }}
       >
         <div
@@ -108,7 +125,7 @@ export default function useBreathe() {
             textAlign: "center",
           }}
         >
-          {getCircleText()}
+          {getCircleText()}h
         </div>{" "}
         {step === 0 && (
           <FaArrowRight
@@ -118,7 +135,6 @@ export default function useBreathe() {
           />
         )}
       </div>
-
       <div
         style={{
           position: "fixed",

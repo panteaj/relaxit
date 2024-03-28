@@ -123,7 +123,7 @@ export default function MentalHealthInfo() {
             <h2 style={{ color: "#DA70D6" }}>Actionable Advice</h2>
             <p style={{ textAlign: "justify" }}>
               Engaging in mindfulness, relaxation techniques, hobbies, and
-              volunteering can help find balance. It's important to know how to
+              volunteering can help find balance. It is important to know how to
               seek and accept help, nurturing your social connections and
               personal well-being.
               <span style={{ textDecoration: "none", color: "#DA70D6" }}>
@@ -158,7 +158,7 @@ export default function MentalHealthInfo() {
             <h2 style={{ color: "#FFD700" }}>Resources and Support</h2>
             <p style={{ textAlign: "justify" }}>
               Campus resources such as counseling services, support groups, and
-              academic help centers can provide valuable assistance. Don't
+              academic help centers can provide valuable assistance. Do not
               hesitate to reach out for professional help if needed.
               <span style={{ textDecoration: "none", color: "#FFD700" }}>
                 <Link href={mentalHealthLinks.counseling}>

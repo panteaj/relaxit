@@ -97,6 +97,7 @@ export default function MentalHealthInfo() {
           </h1>
         </div>
       </nav>
+
       <div
         style={{
           maxWidth: "1200px",
@@ -238,8 +239,8 @@ export default function MentalHealthInfo() {
               Depression is a mood disorder that affects how a person feels,
               thinks, and handles daily activities. It is not the same as
               occasional sadness or discouragement. Depression can lead to
-              emotional and physical problems, affecting a person's ability to
-              function at work and home.
+              emotional and physical problems, affecting the ability to function
+              at work and home.
               <br />
             </p>
             <span
@@ -278,7 +279,7 @@ export default function MentalHealthInfo() {
           <p style={{ textAlign: "justify" }}>
             Stress is a natural physical and mental reaction to life
             experiences. However, prolonged stress can lead to health problems,
-            affecting one's emotional, psychological, and physical well-being.
+            affecting the emotional, psychological, and physical well-being.
             <br />
           </p>
 
@@ -337,7 +338,7 @@ export default function MentalHealthInfo() {
                 each other when working. Also, one needs to provide one and
                 their team with some form of positive reinforcement. Even if you
                 acknowledge these small wins, they will lift spirits high and
-                keep motivated. Remember, it's all about cooperation, and in
+                keep motivated. Remember, it is all about cooperation, and in
                 helping each other out, you can make it in your academic duties
                 and nurture lifelong relationships. <br />
               </p>
@@ -348,14 +349,14 @@ export default function MentalHealthInfo() {
               {" "}
               <p style={{ textAlign: "justify" }}>
                 The process of job applications and the uncertainty of career
-                paths can be a source of stress for many. It's important to
+                paths can be a source of stress for many. It is important to
                 understand that feeling anxious about your future career is
-                common, and you're not alone in this journey. Talk about your
+                common, and you are not alone in this journey. Talk about your
                 experiences and feelings with peers; hearing that others share
                 your concerns can be incredibly reassuring. Moreover, taking
                 time to reflect on your own pace and achievements can provide a
-                necessary confidence boost. Focus on what you've accomplished so
-                far and remind yourself of your capabilities. Giving yourself
+                necessary confidence boost. Focus on what you have accomplished
+                so far and remind yourself of your capabilities. Giving yourself
                 compliments and being your own friend are vital steps in
                 navigating career stress positively.
               </p>{" "}
@@ -424,10 +425,10 @@ export default function MentalHealthInfo() {
               {" "}
               <p style={{ textAlign: "justify" }}>
                 Stress and the risk of burnout are common concerns in academic
-                settings. It's vital to recognize the signs of burnout early and
-                take proactive steps to manage stress.Plan other activities such
-                as socializing, exercises, and fresh air apart from reading.
-                When on breaks, make sure you involve yourself in full
+                settings. It is vital to recognize the signs of burnout early
+                and take proactive steps to manage stress.Plan other activities
+                such as socializing, exercises, and fresh air apart from
+                reading. When on breaks, make sure you involve yourself in full
                 activities that fill you up. Learning how to effectively
                 structure your day and effective study methods can also prove to
                 be very instrumental in working through the stress. Remember,
@@ -450,7 +451,7 @@ export default function MentalHealthInfo() {
                 have difficulties, you may reach out to a student psychologist
                 or support groups who will help you find understanding and
                 support. Remember, overcoming social challenges takes time, and
-                it's okay to take small steps towards building meaningful
+                it is okay to take small steps towards building meaningful
                 connections.
               </p>{" "}
             </AccordionSection>
@@ -476,7 +477,7 @@ export default function MentalHealthInfo() {
               {" "}
               <p style={{ textAlign: "justify" }}>
                 Building a sense of community and seeking support from others
-                can significantly better your well-being. Whether it's forming
+                can significantly better your well-being. Whether it is forming
                 study groups, participating in student organizations, or
                 attending social events, being part of a community can provide a
                 sense of belonging and support. Remember that each and every
@@ -577,7 +578,7 @@ export default function MentalHealthInfo() {
         <p style={{ maxWidth: "800px", marginTop: "40px" }}>
           {" "}
           Campus resources such as counseling services, support groups, and
-          academic help centers can also provide valuable help. Don't hesitate
+          academic help centers can also provide valuable help. Don not hesitate
           to reach out for professional help if needed.
         </p>
         <div

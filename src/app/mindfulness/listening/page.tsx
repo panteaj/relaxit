@@ -71,12 +71,31 @@ export default function StressCoper() {
           </button>
         </div>
       </nav>
-      <div style={{ marginTop: "80px", textAlign: "center", flexGrow: "1" }}>
+      <div
+        style={{
+          marginTop: "80px",
+          textAlign: "center",
+          flexGrow: "1",
+          maxWidth: "800px",
+        }}
+      >
         <h1 style={{ color: "#000000", fontSize: "40px" }}>Listening</h1>
         <p>
-          Listen to the sound that is playing in the backgorund. Use your 5
-          senses to imagine what is happening at your place when this sound
-          plays.
+          Listen to the different sounds. Use your 5 senses to imagine what is
+          happening at the garden when these sounds plays. Think about these as
+          you play the sounds:
+          <p style={{ textAlign: "left" }}>
+            <br />
+            What is the sound you are hearing? What is it like?
+            <br />
+            What do you see as you hear this? <br />
+            What can you feel? Is it the wind touching you or the sensation of
+            water? Or perhaps something else? <br />
+            What can you smell as you hear this? Is it anything linked to the
+            sound? <br />
+            What can you taste? Is it perhaps something lingering in the air or
+            something you ate?
+          </p>
         </p>
       </div>
       <div style={{ marginTop: "60px", textAlign: "center" }}>
@@ -84,7 +103,16 @@ export default function StressCoper() {
           <source src="/birds.mp3" />
           Your browser does not support the audio element.
         </audio>
+        <audio controls>
+          <source src="/rustle.mp3" />
+          Your browser does not support the audio element.
+        </audio>
+        <audio controls>
+          <source src="/water.mp3" />
+          Your browser does not support the audio element.
+        </audio>
       </div>
+
       <div
         style={{ position: "fixed", bottom: "20px", right: "20px" }}
         className="hover:scale-105 hover:shadow-xl"

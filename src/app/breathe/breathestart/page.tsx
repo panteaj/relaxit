@@ -80,6 +80,8 @@ export default function useBreathe() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        //backgroundImage: "url('/back/medi.webp')",
+        //backgroundSize: "cover",
       }}
     >
       <nav
@@ -170,6 +172,7 @@ export default function useBreathe() {
             fontSize: "16px",
             marginRight: "10px",
           }}
+          className="hover:scale-105 hover:shadow-xl"
         >
           Start
         </button>
@@ -199,12 +202,9 @@ export default function useBreathe() {
             borderRadius: "5px",
             fontSize: "16px",
           }}
+          className="hover:scale-105 hover:shadow-xl"
         >
-          <span
-            onClick={handleClick2}
-            style={{ transition: "0.3s" }}
-            className="hover:scale-105 hover:shadow-xl"
-          >
+          <span onClick={handleClick2} style={{ transition: "0.3s" }}>
             Next{" "}
           </span>
         </button>

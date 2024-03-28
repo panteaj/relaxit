@@ -74,16 +74,23 @@ export default function StressCoper() {
       <div style={{ marginTop: "80px", textAlign: "center", flexGrow: "1" }}>
         <h1 style={{ color: "#000000", fontSize: "40px" }}>Eating</h1>
         <p>
-          Now, after that happened, you feel like you need a snack. Maybe a
-          raisin. Imagine eating this raisin, still at your good place. Use your
+          Now, after that happened, you feel like you need a snack. Choose a
+          piece of fruit or a simple, fresh snack that you can find in your
+          garden or imagine finding in such a setting. This could be a ripe
+          apple, a handful of berries, or a freshly plucked herb. Use your five
           senses to take in the sensation of eating it. How does it taste, how
           does the texture feel, what does it look like, what is the smell like
-          and what does it sound like when eating it?
+          and what does it sound like when eating it? <br />
+          This mindful eating exercise in the garden setting encourages you to
+          slow down, appreciate the simple joys of eating, and deepen your
+          connection with the natural world. It serves as a reminder of the
+          interdependence between us and the earth, fostering gratitude and
+          mindfulness in our daily lives.
         </p>
       </div>
       <div style={{ marginTop: "60px", textAlign: "center" }}>
         <audio controls>
-          <source src="/water.mp3" />
+          <source src="/eating.mp3" />
           Your browser does not support the audio element.
         </audio>
       </div>

@@ -28,6 +28,8 @@ export default function StressCoper() {
         flexDirection: "column",
         alignItems: "center",
         overflow: "auto", // for scrolling if content overflows
+        backgroundImage: "url('/visualizatio.webp')",
+        backgroundSize: "cover",
       }}
     >
       <nav
@@ -74,9 +76,19 @@ export default function StressCoper() {
       </nav>
       <div style={{ marginTop: "80px", textAlign: "center", flexGrow: "1" }}>
         <h1 style={{ color: "#000000", fontSize: "40px" }}>Visualization</h1>
-        <p>
+        <p
+          style={{
+            maxWidth: "800px",
+            marginTop: "80px",
+            backgroundColor: "rgba(255, 255, 224, 0.7)",
+            padding: "20px",
+            borderRadius: "10px",
+            boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+          }}
+        >
           Focus on the place in the audio. What do you see, hear, smell, taste
-          and feel here? Visualize this place using these senses in your mind.
+          and feel here? <br />
+          Visualize this place using these senses in your mind.
         </p>
       </div>
 

@@ -27,6 +27,8 @@ export default function StressCoper() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        backgroundImage: "url('/back/back4.webp')",
+        backgroundSize: "cover",
       }}
     >
       <nav
@@ -80,11 +82,24 @@ export default function StressCoper() {
         }}
       >
         <h1 style={{ color: "#000000", fontSize: "40px" }}>Stress-coper</h1>{" "}
-        <p>
+        <p
+          style={{
+            marginTop: "100px",
+            textAlign: "center",
+            flexGrow: "1",
+            maxWidth: "800px",
+            backgroundColor: "rgba(255, 255, 224, 1)",
+            padding: "20px",
+            borderRadius: "10px",
+            boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+          }}
+        >
           The stress-coper is a relaxing journey where you can take a break,
           cope with stress and meet some nice suprises along the way. You can
           quit at any moment. If you want to see all the activities, click on
-          the menu to see them all and jump to the one you would like to do.
+          the menu to see them all and jump to the one you would like to do.{" "}
+          <br />
+          <br />
           Have a relaxing trip!
         </p>
       </div>{" "}
