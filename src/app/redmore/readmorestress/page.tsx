@@ -69,20 +69,21 @@ export default function StressCoper() {
           borderRadius: "10px", // Rounded corners for the text container
           boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
         }}
+      ></div>
+      <h1
+        style={{
+          color: "#000000",
+          fontSize: "40px",
+        }}
       >
-        <h1
-          style={{
-            color: "#000000",
-            fontSize: "40px",
-          }}
-        >
-          Stress-coper
-        </h1>
-        <p>
-          {" "}
-          In this section, you will find a variety of strategies and exercises
-          to help you manage stress. Explore breathing exercises, give yourself some time to focus and scedule and remember what is important for you
-      </div>
+        Stress-coper
+      </h1>
+      <p>
+        {" "}
+        In this section, you will find a variety of strategies and exercises to
+        help you manage stress. Explore breathing exercises, give yourself some
+        time to focus and scedule and remember what is important for you
+      </p>
       <div style={{ position: "fixed", bottom: "20px", right: "20px" }}>
         <button
           style={{
