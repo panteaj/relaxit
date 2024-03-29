@@ -72,7 +72,9 @@ export default function StressCoper() {
         </div>
       </nav>
       <div style={{ marginTop: "80px", textAlign: "center", flexGrow: "1" }}>
-        <h1 style={{ color: "#000000", fontSize: "40px" }}>Eating</h1>
+        <h1 style={{ color: "#000000", fontSize: "40px", maxWidth: "800px" }}>
+          Eating
+        </h1>
         <p>
           Now, after that happened, you feel like you need a snack. Choose a
           piece of fruit or a simple, fresh snack that you can find in your
