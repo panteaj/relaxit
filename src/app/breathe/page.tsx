@@ -125,7 +125,7 @@ export default function useBreathe() {
             textAlign: "center",
           }}
         >
-          {getCircleText()}h
+          {getCircleText()}
         </div>{" "}
         {step === 0 && (
           <FaArrowRight
