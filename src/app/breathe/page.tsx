@@ -60,6 +60,7 @@ export default function useBreathe() {
           <FaHome
             onClick={handleClick1}
             style={{ color: "#FFFFFF", marginRight: "10px", fontSize: "45px" }}
+            className="hover:scale-105 hover:shadow-xl"
           />
           <h1
             style={{

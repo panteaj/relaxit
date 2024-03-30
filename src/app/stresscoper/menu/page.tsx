@@ -76,6 +76,7 @@ function StressCoper() {
               fontSize: "45px",
               cursor: "pointer",
             }}
+            className="hover:scale-105 hover:shadow-xl"
           />
           <h1
             style={{

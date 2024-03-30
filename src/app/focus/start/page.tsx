@@ -179,6 +179,7 @@ export default function StressCoper() {
               fontSize: "45px",
               color: "#FFFFFF",
             }}
+            className="hover:scale-105 hover:shadow-xl"
           />
           <h1
             style={{
