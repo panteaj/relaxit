@@ -78,7 +78,7 @@ export default function StressCoper() {
             fontSize: "40px",
           }}
         >
-          Mental health informtion
+          Mental health information
         </h1>
         <p>
           {" "}
