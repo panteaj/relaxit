@@ -619,6 +619,44 @@ export default function MentalHealthInfo() {
           <li>Stay connected with friends and family</li>
         </ul>
       </div>
+      <footer
+        className="py-4 text-left pl-6"
+        style={{ color: "#000000", marginTop: "60px" }}
+      >
+        Information sourced from:
+        <ul>
+          <li>
+            <a
+              href={mentalHealthLinks.disorders}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#000000" }}
+            >
+              Helsedirektoratet - Mental health disorders
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.who.int/health-topics/mental-health#tab=tab_1"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#000000" }}
+            >
+              WHO - Mental health
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.samhsa.gov/mental-health"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#000000" }}
+            >
+              samhsa- Mental health
+            </a>
+          </li>
+        </ul>
+      </footer>
     </main>
   );
 }

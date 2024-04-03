@@ -1,3 +1,4 @@
+// stressCoper.tsx
 "use client";
 import { useRouter } from "next/navigation";
 import { FaHome } from "react-icons/fa";
@@ -8,7 +9,7 @@ export default function StressCoper() {
     router.push("/");
   };
   const handleClick2 = () => {
-    router.push("/stresscoper");
+    router.push("/mindfulness");
   };
   const handleClickBack = () => {
     router.back();
@@ -70,21 +71,22 @@ export default function StressCoper() {
           borderRadius: "10px", // Rounded corners for the text container
           boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
         }}
-      ></div>
-      <h1
-        style={{
-          color: "#000000",
-          fontSize: "40px",
-        }}
       >
-        Stress-coper
-      </h1>
-      <p>
-        {" "}
-        In this section, you will find a variety of strategies and exercises to
-        help you manage stress. Explore breathing exercises, give yourself some
-        time to focus and scedule and remember what is important for you
-      </p>
+        <h1
+          style={{
+            color: "#000000",
+            fontSize: "40px",
+          }}
+        >
+          Stress-coper
+        </h1>
+        <p>
+          {" "}
+          In this section, you will find a variety of strategies and exercises
+          to help you manage stress. Explore breathing exercises, give yourself
+          some time to focus and scedule and remember what is important for you
+        </p>
+      </div>
       <div style={{ position: "fixed", bottom: "20px", right: "20px" }}>
         <button
           style={{
