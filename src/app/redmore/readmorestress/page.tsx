@@ -9,7 +9,7 @@ export default function StressCoper() {
     router.push("/");
   };
   const handleClick2 = () => {
-    router.push("/mindfulness");
+    router.push("/stresscoper");
   };
   const handleClickBack = () => {
     router.back();
